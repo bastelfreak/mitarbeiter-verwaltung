@@ -1,6 +1,8 @@
 // created by Tim Meusel
 
 #include "tmitarbeiter.h"
+#include "mitarbeiter.h"
+#include <iostream>
 
 int main()
 {

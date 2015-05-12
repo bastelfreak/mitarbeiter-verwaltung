@@ -1,7 +1,5 @@
 // created by Tim Meusel
 
-# pragma once
-
 #include "mitarbeiter.h"
 #include <iostream>
 
@@ -50,7 +48,15 @@ float summeGehalt(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe[])
 
 int maxMitarbeiterID(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe[])
 {
-
+  int mitarbeiterID = 0;
+  for(int i = 0; i <= mitarbeiterAnzahl; i++)
+  {
+    if(mitarbeiterListe[i].id > mitarbeiterID)
+    {
+      mitarbeiterID = mitarbeiterListe[i].id;
+    }
+  }
+  return mitarbeiterID;
 }
 
 int splitString(char zeichenkette[], int index, char trennzeichen)
