@@ -14,6 +14,8 @@ tMitarbeiter mitarbeiterEinlesen(void)
   std::cin >> neuerMitarbeiter.vorname;
   std::cout << "ID: ";
   std::cin >> neuerMitarbeiter.id;
+  std::cout << "Gehalt: ";
+  std::cin >> neuerMitarbeiter.gehalt;
   return neuerMitarbeiter;
 }
 
@@ -38,7 +40,12 @@ int mitarbeiterNachIDSuchen(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe
 
 float summeGehalt(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe[])
 {
-
+  float gehalt = 0;
+  for(int i = 0; i <= mitarbeiterAnzahl; i++)
+  {
+    gehalt += mitarbeiterListe[i].gehalt;
+  }
+  return gehalt;
 }
 
 int maxMitarbeiterID(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe[])
