@@ -67,3 +67,27 @@ OUT: -
 IN/OUT Mitarbeiterliste
 RETURN: - */
 void sortiereMitarbeiterNachGehalt(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe[]);
+
+/* Name: mitarbeiterListeAusgeben
+Zweck: ueber Liste iterieren und ausgeben
+IN: Anzahl Mitarbeiter
+OUT: -
+IN/OUT: Mitarbeiterliste
+RETURN: - */
+void mitarbeiterlisteAusgeben (tMitarbeiter mitarbeiterListe[], int anzahl);
+
+/* Name: bubbelSort
+Zweck: structs umsortieren
+IN: mitarbeiterAnzahl
+OUT:
+IN/OUT: mitarbeiterListe
+RETURN: - */
+void bubbleSort(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe[]);
+
+/* Name: quickSort
+Zweck: structs umsortieren
+IN:mitarbeiterAnzahl
+OUT:
+IN/OUT: mitarbeiterListe
+RETURN: - */
+void quickSort(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe[]);
