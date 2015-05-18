@@ -26,7 +26,7 @@ int mitarbeiterHinzufuegen(int mitarbeiterAnzahl, tMitarbeiter neuerMitarbeiter,
 int mitarbeiterNachIDSuchen(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe[], int suchID)
 {
   int mitarbeiterID = -1;
-  for(int i = 0; i <= mitarbeiterAnzahl; i++)
+  for(int i = 0; i < mitarbeiterAnzahl; i++)
   {
     if(mitarbeiterListe[i].id == suchID)
     {
