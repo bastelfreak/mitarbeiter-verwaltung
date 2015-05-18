@@ -31,6 +31,7 @@ int mitarbeiterNachIDSuchen(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe
     if(mitarbeiterListe[i].id == suchID)
     {
       mitarbeiterID = i;
+      break;
     }
   }
   return mitarbeiterID;
