@@ -30,7 +30,7 @@ int mitarbeiterNachIDSuchen(int mitarbeiterAnzahl, tMitarbeiter mitarbeiterListe
   {
     if(mitarbeiterListe[i].id == suchID)
     {
-      mitarbeiterID = suchID;
+      mitarbeiterID = i;
     }
   }
   return mitarbeiterID;
